@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Built Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">My First Built Survey Form</h1>
+    <p id="description"> This is my first built survey form using HTML and CSS</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label id="name-label">
+          Enter your name: <input id="name" type="text" placeholder="Name" required> 
+          </input></label>
+        <label id="email-label">  
+          Enter your email: <input id="email" type="email" placeholder="Email Address" required> </input>
+        </label>
+        <label id="number-label">
+          Enter your Age: <input id="number" type="number" min="18" max="120" placeholder="Age"> 
+        </label>
+
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"> Is music an important part of your life?
+        <select id="dropdown"> 
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        </label>
+      </fieldset>
+      <fieldset>
+      Have you ever attended a live concert?
+       <div class="radio-container"></div>
+        <label>
+          <input id="yes" type="radio" name="response" value="yes" checked>Yes
+          <input id="no" type="radio" name="response" value="no">No 
+        </label>
+      </div>
+       </fieldset>
+       <fieldset>
+         <strong>What is your favorite genre of music?</strong>
+         <label><input type="checkbox" name="pop" value="pop"></label>Pop
+         <label><input type="checkbox" name="rock" value="rock"></label>Rock</label>
+         <label><input type="checkbox" name="hiphop" value="hiphop"></label>Hip Hop</label>
+         <label><input type="checkbox" name="jazz" value="jazz"></label>Jazz</label>
+         <label><input type="checkbox" name="rnb" value="rnb"></label>RnB</label>
+       </fieldset>
+       <fieldset>
+         <label id="songs"></label>When you're feeling sad, what are at least three songs that you like to listen to for comfort? Please list them.
+         <textarea></textarea>
+       </fieldset>
+       <input type="submit" value="Submit">
+    </form> 
+  </body>
+</html>
